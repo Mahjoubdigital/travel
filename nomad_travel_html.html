@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><base href="https://d16ilfvy4mv02r.cloudfront.net/workspaces/KRQajXwgzdZdTTnzjvqY3FYDYzblA4OH/b7819515-715d-48e9-8058-269ee03d24b5/files/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nomad Travel — Agencia de Viajes de Aventura</title>
+  <meta name="description" content="Nomad Travel: Tu agencia de viajes de aventura. Descubre destinos únicos en Nepal, Maldivas, Sri Lanka, India, Filipinas y más. Mejor precio garantizado." />
+  <meta name="keywords" content="viajes aventura, trekking Nepal, Maldivas, Sri Lanka, agencia viajes, tours, excursiones, viajes baratos" />
+  <meta property="og:title" content="Nomad Travel — Agencia de Viajes de Aventura" />
+  <meta property="og:description" content="Escapa de tu zona de confort. Viajes únicos de aventura con guías expertos y el mejor precio garantizado." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://nomadtravel.es/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== VARIABLES ===== */
+    :root {
+      --green: #1a6b3a;
+      --green-dark: #144f2c;
+      --green-light: #22894b;
+      --orange: #f47c20;
+      --orange-light: #ff9240;
+      --white: #ffffff;
+      --gray-50: #f8f9fa;
+      --gray-100: #f1f3f5;
+      --gray-200: #e9ecef;
+      --gray-500: #868e96;
+      --gray-700: #495057;
+      --dark: #1e1e2e;
+      --dark-2: #2d2d3d;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.14);
+      --transition: 0.3s ease;
+    }
+
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--dark); background: #fff; overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ===== UTILITIES ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: var(--dark); line-height: 1.2; }
+    .section-subtitle { color: var(--gray-500); font-size: 1rem; margin-top: 10px; max-width: 560px; }
+    .section-header { margin-bottom: 48px; }
+    .section-header.center { text-align: center; }
+    .section-header.center .section-subtitle { margin: 10px auto 0; }
+    .badge { display: inline-block; padding: 4px 10px; border-radius: 30px; font-size: 0.72rem; font-weight: 600; }
+    .badge-orange { background: var(--orange); color: #fff; }
+    .badge-green { background: var(--green); color: #fff; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: var(--radius); font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: var(--transition); border: none; }
+    .btn-primary { background: var(--green); color: #fff; }
+    .btn-primary:hover { background: var(--green-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,107,58,0.35); }
+    .btn-outline { background: transparent; color: var(--green); border: 2px solid var(--green); }
+    .btn-outline:hover { background: var(--green); color: #fff; }
+    .btn-orange { background: var(--orange); color: #fff; }
+    .btn-orange:hover { background: var(--orange-light); transform: translateY(-2px); }
+    .btn-lg { padding: 16px 36px; font-size: 1rem; border-radius: 50px; }
+    .btn-center { display: flex; justify-content: center; margin-top: 40px; }
+
+    /* ===== TOP BAR ===== */
+    .topbar { background: var(--dark); color: #fff; font-size: 0.82rem; padding: 8px 0; }
+    .topbar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .topbar a { color: #ccc; }
+    .topbar a:hover { color: #fff; }
+    .topbar-info { display: flex; gap: 24px; }
+    .topbar-info span { display: flex; align-items: center; gap: 6px; }
+
+    /* ===== NAVBAR ===== */
+    .navbar { position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.06); transition: box-shadow var(--transition); }
+    .navbar.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--dark); }
+    .nav-logo svg { width: 36px; height: 36px; }
+    .nav-links { display: flex; align-items: center; gap: 6px; }
+    .nav-links a { padding: 8px 14px; border-radius: 8px; font-size: 0.88rem; font-weight: 500; color: var(--gray-700); transition: var(--transition); }
+    .nav-links a:hover { color: var(--green); background: rgba(26,107,58,0.07); }
+    .nav-links .btn-primary { color: #fff; padding: 9px 20px; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--dark); border-radius: 2px; transition: var(--transition); }
+    .mobile-menu { display: none; position: fixed; inset: 0; background: var(--dark); z-index: 2000; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { color: #fff; font-size: 1.5rem; font-weight: 600; font-family: 'Playfair Display', serif; transition: color var(--transition); }
+    .mobile-menu a:hover { color: var(--orange); }
+    .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer; }
+
+    /* ===== HERO ===== */
+    .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&auto=format&fit=crop'); background-size: cover; background-position: center; }
+    .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.65) 100%); }
+    .hero-content { position: relative; z-index: 2; color: #fff; padding: 80px 20px 60px; max-width: 900px; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.25); border-radius: 30px; padding: 6px 18px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 24px; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 800; line-height: 1.05; margin-bottom: 16px; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .hero-title em { color: var(--orange); font-style: normal; }
+    .hero-subtitle { font-size: clamp(1rem, 2.5vw, 1.25rem); opacity: 0.9; margin-bottom: 44px; font-weight: 300; }
+
+    /* SEARCH BOX */
+    .search-box { background: rgba(255,255,255,0.96); backdrop-filter: blur(20px); border-radius: 20px; padding: 28px 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); max-width: 780px; margin: 0 auto; }
+    .search-grid { display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 16px; align-items: end; }
+    .search-field label { display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray-700); margin-bottom: 8px; }
+    .search-field select, .search-field input { width: 100%; padding: 12px 16px; border: 2px solid var(--gray-200); border-radius: 10px; font-size: 0.9rem; font-family: 'Inter', sans-serif; color: var(--dark); background: #fff; outline: none; transition: border-color var(--transition); }
+    .search-field select:focus, .search-field input:focus { border-color: var(--green); }
+    .search-btn { background: var(--green); color: #fff; border: none; padding: 14px 32px; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: var(--transition); white-space: nowrap; font-family: 'Inter', sans-serif; }
+    .search-btn:hover { background: var(--green-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,107,58,0.4); }
+    .hero-stats { display: flex; justify-content: center; gap: 40px; margin-top: 36px; flex-wrap: wrap; }
+    .hero-stat { text-align: center; }
+    .hero-stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--orange); }
+    .hero-stat-label { font-size: 0.78rem; opacity: 0.8; }
+
+    /* ===== FEATURES ===== */
+    .features { padding: 80px 0; background: var(--gray-50); }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .feature-card { background: #fff; border-radius: var(--radius-lg); padding: 36px 32px; text-align: center; box-shadow: var(--shadow); transition: var(--transition); border: 1px solid var(--gray-200); }
+    .feature-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .feature-icon { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 20px; }
+    .feature-icon.green { background: rgba(26,107,58,0.1); }
+    .feature-icon.orange { background: rgba(244,124,32,0.1); }
+    .feature-icon.blue { background: rgba(59,130,246,0.1); }
+    .feature-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+    .feature-card p { color: var(--gray-500); font-size: 0.9rem; line-height: 1.7; }
+
+    /* ===== TRIPS ===== */
+    .trips { padding: 90px 0; }
+    .trips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .trip-card { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); background: #fff; border: 1px solid var(--gray-200); }
+    .trip-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .trip-img { position: relative; height: 220px; overflow: hidden; }
+    .trip-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .trip-card:hover .trip-img img { transform: scale(1.06); }
+    .trip-badges { position: absolute; top: 14px; left: 14px; display: flex; gap: 8px; }
+    .trip-body { padding: 22px; }
+    .trip-destination { font-size: 0.78rem; font-weight: 600; color: var(--green); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+    .trip-name { font-size: 1.05rem; font-weight: 700; margin-bottom: 14px; line-height: 1.4; color: var(--dark); }
+    .trip-meta { display: flex; gap: 16px; font-size: 0.8rem; color: var(--gray-500); margin-bottom: 16px; }
+    .trip-meta span { display: flex; align-items: center; gap: 5px; }
+    .trip-price { display: flex; align-items: center; gap: 12px; }
+    .trip-price-old { font-size: 0.85rem; color: var(--gray-500); text-decoration: line-through; }
+    .trip-price-new { font-size: 1.25rem; font-weight: 700; color: var(--green); }
+
+    /* ===== DESTINATIONS ===== */
+    .destinations { padding: 90px 0; background: var(--gray-50); }
+    .dest-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 20px; }
+    .dest-card { position: relative; border-radius: var(--radius); overflow: hidden; cursor: pointer; }
+    .dest-card.tall { grid-row: span 2; }
+    .dest-card.wide { grid-column: span 2; }
+    .dest-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .dest-card:hover img { transform: scale(1.08); }
+    .dest-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 60%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; color: #fff; }
+    .dest-name { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; }
+    .dest-trips { font-size: 0.78rem; opacity: 0.85; margin-bottom: 10px; }
+    .dest-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 600; background: rgba(255,255,255,0.2); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.35); border-radius: 6px; padding: 5px 12px; color: #fff; transition: background var(--transition); }
+    .dest-btn:hover { background: rgba(255,255,255,0.35); }
+
+    /* ===== ACTIVITIES ===== */
+    .activities { padding: 90px 0; }
+    .activities-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 24px; }
+    .activity-card { text-align: center; cursor: pointer; }
+    .activity-img { width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin: 0 auto 14px; border: 3px solid var(--gray-200); transition: border-color var(--transition), transform var(--transition); box-shadow: var(--shadow); }
+    .activity-img img { width: 100%; height: 100%; object-fit: cover; }
+    .activity-card:hover .activity-img { border-color: var(--green); transform: scale(1.08); }
+    .activity-card h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
+    .activity-card span { font-size: 0.75rem; color: var(--gray-500); }
+
+    /* ===== STATS ===== */
+    .stats { padding: 80px 0; background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%); }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center; color: #fff; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 3.8rem); font-weight: 800; color: var(--orange); line-height: 1; }
+    .stat-label { font-size: 0.9rem; opacity: 0.85; margin-top: 8px; font-weight: 500; }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials { padding: 90px 0; background: var(--gray-50); }
+    .testimonials-slider { position: relative; overflow: hidden; }
+    .testimonials-track { display: flex; transition: transform 0.5s ease; }
+    .testimonial-slide { min-width: 100%; }
+    .testimonials-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .testimonial-card { background: #fff; border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow); border: 1px solid var(--gray-200); }
+    .testimonial-stars { color: #FFB800; font-size: 1rem; margin-bottom: 14px; }
+    .testimonial-text { font-size: 0.95rem; line-height: 1.8; color: var(--gray-700); margin-bottom: 24px; font-style: italic; }
+    .testimonial-author { display: flex; align-items: center; gap: 14px; }
+    .author-avatar { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; color: #fff; flex-shrink: 0; }
+    .author-name { font-weight: 700; font-size: 0.92rem; }
+    .author-role { font-size: 0.78rem; color: var(--gray-500); }
+    .slider-dots { display: flex; justify-content: center; gap: 8px; margin-top: 32px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--gray-200); cursor: pointer; transition: background var(--transition), transform var(--transition); }
+    .dot.active { background: var(--green); transform: scale(1.3); }
+    .slider-controls { display: flex; justify-content: center; gap: 12px; margin-top: 20px; }
+    .slider-btn { width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--green); background: none; color: var(--green); font-size: 1.1rem; cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: center; }
+    .slider-btn:hover { background: var(--green); color: #fff; }
+
+    /* ===== BLOG ===== */
+    .blog { padding: 90px 0; }
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .blog-card { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); background: #fff; transition: var(--transition); border: 1px solid var(--gray-200); }
+    .blog-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .blog-img { height: 200px; overflow: hidden; }
+    .blog-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+    .blog-card:hover .blog-img img { transform: scale(1.05); }
+    .blog-body { padding: 24px; }
+    .blog-date { font-size: 0.75rem; color: var(--gray-500); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+    .blog-title { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; line-height: 1.4; color: var(--dark); }
+    .blog-excerpt { font-size: 0.85rem; color: var(--gray-500); line-height: 1.7; margin-bottom: 18px; }
+    .blog-read { font-size: 0.82rem; font-weight: 700; color: var(--green); display: flex; align-items: center; gap: 6px; }
+    .blog-read:hover { color: var(--green-dark); }
+
+    /* ===== CTA BANNER ===== */
+    .cta-banner { padding: 80px 0; background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%); text-align: center; position: relative; overflow: hidden; }
+    .cta-banner::before { content: ''; position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1400&auto=format&fit=crop') center/cover; opacity: 0.12; }
+    .cta-banner .container { position: relative; z-index: 1; color: #fff; }
+    .cta-banner h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 14px; }
+    .cta-banner p { opacity: 0.88; font-size: 1.1rem; margin-bottom: 36px; }
+    .btn-whatsapp { background: #25D366; color: #fff; border-radius: 50px; padding: 16px 40px; font-size: 1.1rem; font-weight: 700; display: inline-flex; align-items: center; gap: 12px; transition: var(--transition); box-shadow: 0 8px 30px rgba(37,211,102,0.4); }
+    .btn-whatsapp:hover { background: #1ebe5d; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(37,211,102,0.5); }
+    .btn-whatsapp svg { width: 26px; height: 26px; fill: #fff; }
+
+    /* ===== FOOTER ===== */
+    footer { background: var(--dark); color: #fff; padding: 60px 0 28px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 48px; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .footer-desc { font-size: 0.88rem; color: #aaa; line-height: 1.8; margin-bottom: 24px; }
+    .footer-contact-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; color: #ccc; margin-bottom: 10px; }
+    .footer-col-title { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--orange); margin-bottom: 18px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { font-size: 0.88rem; color: #aaa; transition: color var(--transition); }
+    .footer-col ul li a:hover { color: #fff; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.82rem; color: #666; }
+    .footer-bottom a { color: var(--green-light); }
+
+    /* ===== FLOATING WHATSAPP ===== */
+    .float-wa { position: fixed; bottom: 30px; right: 30px; z-index: 9999; }
+    .float-wa a { display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: #25D366; border-radius: 50%; box-shadow: 0 6px 24px rgba(37,211,102,0.5); transition: transform var(--transition); }
+    .float-wa a:hover { transform: scale(1.12); }
+    .float-wa a svg { width: 30px; height: 30px; fill: #fff; }
+    .float-wa-pulse { position: absolute; inset: 0; border-radius: 50%; background: #25D366; animation: pulse 2s infinite; z-index: -1; }
+    @keyframes pulse { 0%,100%{ transform:scale(1); opacity:.5 } 50%{ transform:scale(1.4); opacity:0 } }
+
+    /* ===== POPUP MODAL ===== */
+    .popup-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.65); z-index:10000; display:flex; align-items:center; justify-content:center; padding:20px; opacity:0; pointer-events:none; transition:opacity 0.3s ease; }
+    .popup-overlay.active { opacity:1; pointer-events:all; }
+    .popup-box { background:#fff; border-radius:24px; max-width:700px; width:100%; max-height:90vh; overflow-y:auto; position:relative; transform:translateY(30px) scale(0.97); transition:transform 0.35s cubic-bezier(.34,1.56,.64,1); box-shadow:0 30px 80px rgba(0,0,0,0.3); }
+    .popup-overlay.active .popup-box { transform:translateY(0) scale(1); }
+    .popup-hero { position:relative; height:260px; overflow:hidden; border-radius:24px 24px 0 0; }
+    .popup-hero img { width:100%; height:100%; object-fit:cover; }
+    .popup-hero-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 60%); }
+    .popup-hero-badges { position:absolute; top:16px; left:16px; display:flex; gap:8px; }
+    .popup-close { position:absolute; top:14px; right:14px; width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,0.9); border:none; font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background 0.2s; z-index:2; box-shadow:0 2px 10px rgba(0,0,0,0.2); }
+    .popup-close:hover { background:#fff; }
+    .popup-hero-title { position:absolute; bottom:16px; left:20px; right:20px; color:#fff; font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:700; line-height:1.3; text-shadow:0 2px 10px rgba(0,0,0,0.5); }
+    .popup-body { padding:28px 32px 32px; }
+    .popup-meta-row { display:flex; gap:20px; flex-wrap:wrap; margin-bottom:20px; }
+    .popup-meta-item { display:flex; align-items:center; gap:8px; font-size:0.88rem; color:var(--gray-700); background:var(--gray-50); border:1px solid var(--gray-200); border-radius:8px; padding:8px 14px; font-weight:500; }
+    .popup-meta-item span { font-size:1rem; }
+    .popup-desc { font-size:0.93rem; line-height:1.8; color:var(--gray-700); margin-bottom:24px; }
+    .popup-price-row { display:flex; align-items:center; gap:16px; margin-bottom:28px; }
+    .popup-price-old { font-size:1rem; color:var(--gray-500); text-decoration:line-through; }
+    .popup-price-new { font-size:2rem; font-weight:800; color:var(--green); font-family:'Playfair Display',serif; }
+    .popup-price-save { background:rgba(244,124,32,0.12); color:var(--orange); font-size:0.8rem; font-weight:700; padding:4px 10px; border-radius:20px; }
+    .popup-highlights { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:28px; }
+    .popup-highlight { display:flex; align-items:flex-start; gap:10px; font-size:0.85rem; color:var(--gray-700); }
+    .popup-highlight::before { content:'✓'; color:var(--green); font-weight:700; flex-shrink:0; margin-top:1px; }
+    .popup-cta { display:flex; gap:12px; flex-wrap:wrap; }
+    .popup-btn-wa { flex:1; min-width:200px; background:#25D366; color:#fff; border:none; border-radius:12px; padding:15px 24px; font-size:1rem; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:10px; transition:all 0.3s; font-family:'Inter',sans-serif; }
+    .popup-btn-wa:hover { background:#1ebe5d; transform:translateY(-2px); box-shadow:0 8px 24px rgba(37,211,102,0.4); }
+    .popup-btn-wa svg { width:22px; height:22px; fill:#fff; flex-shrink:0; }
+    .popup-btn-close { background:var(--gray-100); color:var(--gray-700); border:none; border-radius:12px; padding:15px 24px; font-size:1rem; font-weight:600; cursor:pointer; font-family:'Inter',sans-serif; transition:background 0.2s; }
+    .popup-btn-close:hover { background:var(--gray-200); }
+    .popup-tag-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+    .popup-tag { font-size:0.78rem; font-weight:600; padding:4px 12px; border-radius:20px; background:rgba(26,107,58,0.1); color:var(--green); }
+    @media(max-width:600px){ .popup-body{padding:20px 18px 24px;} .popup-highlights{grid-template-columns:1fr;} .popup-hero{height:200px;} .popup-hero-title{font-size:1.2rem;} .popup-price-new{font-size:1.6rem;} }
+
+    /* card cursor pointer */
+    .trip-card, .dest-card, .activity-card { cursor:pointer; }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .activities-grid { grid-template-columns: repeat(3, 1fr); }
+      .dest-grid { grid-template-columns: repeat(2, 1fr); }
+      .dest-card.tall { grid-row: auto; }
+      .dest-card.wide { grid-column: auto; }
+    }
+    @media (max-width: 768px) {
+      .topbar { display: none; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .features-grid, .trips-grid, .blog-grid { grid-template-columns: 1fr 1fr; }
+      .search-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .testimonials-inner { grid-template-columns: 1fr; }
+      .activities-grid { grid-template-columns: repeat(3, 1fr); }
+      .dest-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 520px) {
+      .features-grid, .trips-grid, .blog-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; }
+      .activities-grid { grid-template-columns: repeat(2, 1fr); }
+      .dest-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <span>📞 <a href="tel:+34900123456">+34 900 123 456</a></span>
+        <span>✉️ <a href="mailto:hola@nomadtravel.es">hola@nomadtravel.es</a></span>
+      </div>
+      <div class="topbar-info">
+        <span>🕐 Lun–Dom: 6am – 9pm</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="17" stroke="#1a6b3a" stroke-width="2"/>
+          <path d="M18 6 L21 15 L30 15 L23 21 L26 30 L18 24 L10 30 L13 21 L6 15 L15 15 Z" fill="#f47c20"/>
+          <circle cx="18" cy="18" r="3" fill="#1a6b3a"/>
+        </svg>
+        Nomad Travel
+      </a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#viajes">Viajes</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://wa.seo-local.click/land/viajes-ferry" target="_blank" class="btn btn-primary">Reservar Ahora</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <a href="#inicio" class="mobile-link">Inicio</a>
+    <a href="#viajes" class="mobile-link">Viajes</a>
+    <a href="#destinos" class="mobile-link">Destinos</a>
+    <a href="#actividades" class="mobile-link">Actividades</a>
+    <a href="#testimonios" class="mobile-link">Testimonios</a>
+    <a href="#blog" class="mobile-link">Blog</a>
+    <a href="#contacto" class="mobile-link">Contacto</a>
+    <a href="https://wa.seo-local.click/land/viajes-ferry" target="_blank" style="background:var(--orange);color:#fff;padding:14px 36px;border-radius:50px;font-size:1.1rem;margin-top:10px;">Reservar Ahora</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">🌍 Tu Agencia de Viajes de Aventura</div>
+      <h1 class="hero-title">Escapa de tu<br /><em>Zona de Confort</em></h1>
+      <p class="hero-subtitle">Agarra tu mochila y perdámonos juntos. Experiencias únicas que cambiarán tu vida.</p>
+
+      <div class="search-box">
+        <div class="search-grid">
+          <div class="search-field">
+            <label>Actividad</label>
+            <select>
+              <option value="">Elige actividad</option>
+              <option>Senderismo</option>
+              <option>City Tour</option>
+              <option>Ciclismo</option>
+              <option>Trekking</option>
+              <option>Safari</option>
+              <option>Rafting</option>
+              <option>Escalada</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label>Destino</label>
+            <select>
+              <option value="">Elige destino</option>
+              <option>Nepal</option>
+              <option>Maldivas</option>
+              <option>Sri Lanka</option>
+              <option>India</option>
+              <option>Filipinas</option>
+              <option>Francia</option>
+              <option>Perú</option>
+              <option>Bután</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label>Personas</label>
+            <select>
+              <option>1 Persona</option>
+              <option>2 Personas</option>
+              <option>3 Personas</option>
+              <option>4 Personas</option>
+              <option>5+ Personas</option>
+            </select>
+          </div>
+          <button class="search-btn">🔍 Buscar</button>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-num">500+</div><div class="hero-stat-label">Viajes disponibles</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">45+</div><div class="hero-stat-label">Países</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">10K+</div><div class="hero-stat-label">Viajeros felices</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card fade-up">
+          <div class="feature-icon green">🏆</div>
+          <h3>Destinos Seleccionados</h3>
+          <p>Nuestro riguroso proceso de selección garantiza que solo verás los mejores destinos y experiencias del mundo.</p>
+        </div>
+        <div class="feature-card fade-up" style="transition-delay:.1s">
+          <div class="feature-icon orange">💰</div>
+          <h3>Mejor Precio Garantizado</h3>
+          <p>Nuestra Garantía de Mejor Precio significa que puedes reservar con la tranquilidad de obtener la mejor tarifa disponible.</p>
+        </div>
+        <div class="feature-card fade-up" style="transition-delay:.2s">
+          <div class="feature-icon blue">🕐</div>
+          <h3>Atención 24/7</h3>
+          <p>Nuestro equipo está disponible las 24 horas, los 7 días de la semana para que tu experiencia de viaje sea increíble.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIAJES POPULARES -->
+  <section id="viajes" class="trips">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p style="color:var(--green);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">✦ Viajes Populares</p>
+        <h2 class="section-title">Explora nuestros viajes más populares</h2>
+        <p class="section-subtitle">Comienza con los viajes mejor valorados seleccionados a mano por nuestros expertos.</p>
+      </div>
+      <div class="trips-grid">
+
+        <!-- Card 1 -->
+        <div class="trip-card fade-up" onclick="openPopup('trip1')">
+          <div class="trip-img">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop" alt="Trek Everest Base Camp" loading="lazy" />
+            <div class="trip-badges"><span class="badge badge-orange">8% Off</span><span class="badge badge-green">Destacado</span></div>
+          </div>
+          <div class="trip-body">
+            <div class="trip-destination">🇳🇵 Nepal</div>
+            <h3 class="trip-name">Trek al Campo Base del Everest: El Techo del Mundo</h3>
+            <div class="trip-meta">
+              <span>📅 14 días</span>
+              <span>👤 1 persona</span>
+            </div>
+            <div class="trip-price">
+              <span class="trip-price-old">€2.800</span>
+              <span class="trip-price-new">€2.576</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trip-card fade-up" style="transition-delay:.1s" onclick="openPopup('trip2')">
+          <div class="trip-img">
+            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&auto=format&fit=crop" alt="Tour por India" loading="lazy" />
+            <div class="trip-badges"><span class="badge badge-orange">11% Off</span></div>
+          </div>
+          <div class="trip-body">
+            <div class="trip-destination">🇮🇳 India</div>
+            <h3 class="trip-name">Descubre la Increíble India: Historia y Colores</h3>
+            <div class="trip-meta">
+              <span>📅 5 días</span>
+              <span>👤 1 persona</span>
+            </div>
+            <div class="trip-price">
+              <span class="trip-price-old">€900</span>
+              <span class="trip-price-new">€800</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="trip-card fade-up" style="transition-delay:.2s" onclick="openPopup('trip3')">
+          <div class="trip-img">
+            <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=600&auto=format&fit=crop" alt="Bután Cultural" loading="lazy" />
+            <div class="trip-badges"><span class="badge badge-orange">14% Off</span><span class="badge badge-green">Destacado</span></div>
+          </div>
+          <div class="trip-body">
+            <div class="trip-destination">🇧🇹 Bután</div>
+            <h3 class="trip-name">Tour Cultural de Bután: El Reino del Himalaya</h3>
+            <div class="trip-meta">
+              <span>📅 7 días</span>
+              <span>👤 1 persona</span>
+            </div>
+            <div class="trip-price">
+              <span class="trip-price-old">€1.800</span>
+              <span class="trip-price-new">€1.548</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="trip-card fade-up" style="transition-delay:.05s" onclick="openPopup('trip4')">
+          <div class="trip-img">
+            <img src="https://images.unsplash.com/photo-1540202404-a2f29016b523?w=600&auto=format&fit=crop" alt="Sri Lanka Luna de Miel" loading="lazy" />
+            <div class="trip-badges"><span class="badge badge-orange">13% Off</span></div>
+          </div>
+          <div class="trip-body">
+            <div class="trip-destination">🇱🇰 Sri Lanka · 🏝️ Maldivas</div>
+            <h3 class="trip-name">Paquete Romántico: Luna de Miel en Sri Lanka</h3>
+            <div class="trip-meta">
+              <span>📅 9 días</span>
+              <span>👥 2 personas</span>
+            </div>
+            <div class="trip-price">
+              <span class="trip-price-old">€700</span>
+              <span class="trip-price-new">€609</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="trip-card fade-up" style="transition-delay:.15s" onclick="openPopup('trip5')">
+          <div class="trip-img">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&auto=format&fit=crop" alt="Maldivas" loading="lazy" />
+            <div class="trip-badges"><span class="badge badge-orange">8% Off</span><span class="badge badge-green">Destacado</span></div>
+          </div>
+          <div class="trip-body">
+            <div class="trip-destination">🏝️ Maldivas</div>
+            <h3 class="trip-name">Fantástico Paquete Tour por las Maldivas</h3>
+            <div class="trip-meta">
+              <span>📅 11 días</span>
+              <span>👤 1 persona</span>
+            </div>
+            <div class="trip-price">
+              <span class="trip-price-old">€800</span>
+              <span class="trip-price-new">€736</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="trip-card fade-up" style="transition-delay:.25s" onclick="openPopup('trip6')">
+          <div class="trip-img">
+            <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&auto=format&fit=crop" alt="Filipinas" loading="lazy" />
+            <div class="trip-badges"><span class="badge badge-orange">8% Off</span></div>
+          </div>
+          <div class="trip-body">
+            <div class="trip-destination">🇵🇭 Filipinas</div>
+            <h3 class="trip-name">7 Días Explorando la Belleza de Filipinas</h3>
+            <div class="trip-meta">
+              <span>📅 7 días</span>
+              <span>👥 2 personas</span>
+            </div>
+            <div class="trip-price">
+              <span class="trip-price-old">€1.200</span>
+              <span class="trip-price-new">€1.104</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="btn-center"><span class="btn btn-primary btn-lg" style="cursor:default;">Ver Todos los Viajes →</span></div>
+    </div>
+  </section>
+
+  <!-- DESTINOS POPULARES -->
+  <section id="destinos" class="destinations">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p style="color:var(--green);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">✦ Destinos Populares</p>
+        <h2 class="section-title">Explora destinos increíbles</h2>
+        <p class="section-subtitle">Un nuevo viaje comienza aquí. Encuentra el destino que más te inspire y empieza a viajar con nosotros.</p>
+      </div>
+      <div class="dest-grid fade-up">
+        <div class="dest-card tall" onclick="openPopup('dest-nepal')">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=80" alt="Nepal" loading="lazy" />
+          <div class="dest-overlay">
+            <div class="dest-name">Nepal</div>
+            <div class="dest-trips">5 viajes disponibles</div>
+            <span class="dest-btn">Ver Más →</span>
+          </div>
+        </div>
+        <div class="dest-card" onclick="openPopup('dest-maldivas')">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&auto=format&fit=crop&q=80" alt="Maldivas" loading="lazy" />
+          <div class="dest-overlay">
+            <div class="dest-name">Maldivas</div>
+            <div class="dest-trips">3 viajes disponibles</div>
+            <span class="dest-btn">Ver Más →</span>
+          </div>
+        </div>
+        <div class="dest-card" onclick="openPopup('dest-filipinas')">
+          <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&auto=format&fit=crop&q=80" alt="Filipinas" loading="lazy" />
+          <div class="dest-overlay">
+            <div class="dest-name">Filipinas</div>
+            <div class="dest-trips">1 viaje disponible</div>
+            <span class="dest-btn">Ver Más →</span>
+          </div>
+        </div>
+        <div class="dest-card wide" onclick="openPopup('dest-india')">
+          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&auto=format&fit=crop&q=80" alt="India" loading="lazy" />
+          <div class="dest-overlay">
+            <div class="dest-name">India</div>
+            <div class="dest-trips">3 viajes disponibles</div>
+            <span class="dest-btn">Ver Más →</span>
+          </div>
+        </div>
+        <div class="dest-card" onclick="openPopup('dest-srilanka')">
+          <img src="https://images.unsplash.com/photo-1540202404-a2f29016b523?w=600&auto=format&fit=crop&q=80" alt="Sri Lanka" loading="lazy" />
+          <div class="dest-overlay">
+            <div class="dest-name">Sri Lanka</div>
+            <div class="dest-trips">4 viajes disponibles</div>
+            <span class="dest-btn">Ver Más →</span>
+          </div>
+        </div>
+        <div class="dest-card" onclick="openPopup('dest-butan')">
+          <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=600&auto=format&fit=crop&q=80" alt="Bután" loading="lazy" />
+          <div class="dest-overlay">
+            <div class="dest-name">Bután</div>
+            <div class="dest-trips">2 viajes disponibles</div>
+            <span class="dest-btn">Ver Más →</span>
+          </div>
+        </div>
+        <div class="dest-card" onclick="openPopup('dest-peru')">
+          <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&auto=format&fit=crop&q=80" alt="Perú" loading="lazy" />
+          <div class="dest-overlay">
+            <div class="dest-name">Perú</div>
+            <div class="dest-trips">2 viajes disponibles</div>
+            <span class="dest-btn">Ver Más →</span>
+          </div>
+        </div>
+        <div class="dest-card" onclick="openPopup('dest-francia')">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&auto=format&fit=crop&q=80" alt="Francia" loading="lazy" />
+          <div class="dest-overlay">
+            <div class="dest-name">Francia</div>
+            <div class="dest-trips">2 viajes disponibles</div>
+            <span class="dest-btn">Ver Más →</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-center fade-up"><span class="btn btn-primary btn-lg" style="cursor:default;">Ver Todos los Destinos →</span></div>
+    </div>
+  </section>
+
+  <!-- ACTIVIDADES -->
+  <section id="actividades" class="activities">
+    <div class="container">
+      <div class="section-header center fade-up">
+        <p style="color:var(--green);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">✦ Actividades Populares</p>
+        <h2 class="section-title">Explora por actividades</h2>
+        <p class="section-subtitle">Una amplia gama de actividades para todos los gustos y niveles de aventura.</p>
+      </div>
+      <div class="activities-grid">
+        <div class="activity-card fade-up" onclick="openPopup('act-senderismo')">
+          <div class="activity-img"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=200&auto=format&fit=crop" alt="Senderismo" loading="lazy" /></div>
+          <h4>Senderismo</h4>
+          <span>6 viajes</span>
+        </div>
+        <div class="activity-card fade-up" style="transition-delay:.07s" onclick="openPopup('act-citytour')">
+          <div class="activity-img"><img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=200&auto=format&fit=crop" alt="City Tour" loading="lazy" /></div>
+          <h4>City Tour</h4>
+          <span>9 viajes</span>
+        </div>
+        <div class="activity-card fade-up" style="transition-delay:.14s" onclick="openPopup('act-ciclismo')">
+          <div class="activity-img"><img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=200&auto=format&fit=crop" alt="Ciclismo" loading="lazy" /></div>
+          <h4>Ciclismo</h4>
+          <span>6 viajes</span>
+        </div>
+        <div class="activity-card fade-up" style="transition-delay:.21s" onclick="openPopup('act-trekking')">
+          <div class="activity-img"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&auto=format&fit=crop" alt="Trekking" loading="lazy" /></div>
+          <h4>Trekking</h4>
+          <span>8 viajes</span>
+        </div>
+        <div class="activity-card fade-up" style="transition-delay:.28s" onclick="openPopup('act-safari')">
+          <div class="activity-img"><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=200&auto=format&fit=crop" alt="Safari" loading="lazy" /></div>
+          <h4>Safari</h4>
+          <span>8 viajes</span>
+        </div>
+        <div class="activity-card fade-up" style="transition-delay:.35s" onclick="openPopup('act-escalada')">
+          <div class="activity-img"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=200&auto=format&fit=crop" alt="Escalada" loading="lazy" /></div>
+          <h4>Escalada</h4>
+          <span>6 viajes</span>
+        </div>
+      </div>
+      <div class="btn-center fade-up"><span class="btn btn-outline btn-lg" style="cursor:default;">Ver Todas las Actividades →</span></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="fade-up">
+          <div class="stat-num" data-target="500">0</div>
+          <div class="stat-label">+ Viajes y Tours</div>
+        </div>
+        <div class="fade-up" style="transition-delay:.1s">
+          <div class="stat-num" data-target="45">0</div>
+          <div class="stat-label">+ Países Visitados</div>
+        </div>
+        <div class="fade-up" style="transition-delay:.2s">
+          <div class="stat-num" data-target="20">0</div>
+          <div class="stat-label">+ Actividades al Aire Libre</div>
+        </div>
+        <div class="fade-up" style="transition-delay:.3s">
+          <div class="stat-num" data-target="10000">0</div>
+          <div class="stat-label">+ Viajeros Felices</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios" class="testimonials">
+    <div class="container">
+      <div class="section-header center fade-up">
+        <p style="color:var(--green);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">✦ Testimonios</p>
+        <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+        <p class="section-subtitle">Viajeros reales. Historias reales. Opiniones genuinas para ayudarte a elegir tu aventura.</p>
+      </div>
+
+      <div class="testimonials-slider fade-up">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonials-inner">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Una experiencia que cambió mi vida. El trek al Everest fue desafiante pero absolutamente mágico. El equipo de Nomad Travel estuvo con nosotros en cada paso. ¡Totalmente recomendado!"</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background:var(--green);">MR</div>
+                  <div>
+                    <div class="author-name">María Rodríguez</div>
+                    <div class="author-role">Trek Everest Base Camp · Madrid</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"El paquete luna de miel en Sri Lanka fue perfecto. Todo estaba organizado al detalle: hoteles de lujo, excursiones privadas y guías increíbles. ¡Repetiríamos sin dudar!"</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background:var(--orange);">CL</div>
+                  <div>
+                    <div class="author-name">Carlos y Laura</div>
+                    <div class="author-role">Luna de Miel Sri Lanka · Barcelona</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonials-inner">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Las Maldivas superaron todas mis expectativas. El resort era un paraíso y el servicio impecable. Nomad Travel gestionó todo a la perfección, desde el vuelo hasta cada excursión."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background:#3b82f6;">AG</div>
+                  <div>
+                    <div class="author-name">Ana García</div>
+                    <div class="author-role">Tour Maldivas · Valencia</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Hicimos el tour cultural por la India en familia y fue una experiencia inigualable. Los niños aprendieron y disfrutaron enormemente. El guía hablaba perfectamente español."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background:#8b5cf6;">JM</div>
+                  <div>
+                    <div class="author-name">Javier Morales</div>
+                    <div class="author-role">Tour India en Familia · Sevilla</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-dots">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn">‹</button>
+        <button class="slider-btn" id="nextBtn">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p style="color:var(--green);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">✦ Blog & Tips</p>
+        <h2 class="section-title">Tips y Blog de Viaje</h2>
+        <p class="section-subtitle">Los últimos consejos de viaje y artículos que cubren todas las experiencias del mundo.</p>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card fade-up">
+          <div class="blog-img"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&fit=crop" alt="Montañas Rocosas" loading="lazy" /></div>
+          <div class="blog-body">
+            <div class="blog-date">📅 18 octubre 2024</div>
+            <h3 class="blog-title">Guía Completa para las Vacaciones en las Montañas Rocosas</h3>
+            <p class="blog-excerpt">Todo lo que necesitas saber para planificar el viaje perfecto a las majestuosas Montañas Rocosas: rutas, alojamiento y consejos esenciales.</p>
+            <span class="blog-read" style="cursor:default;">Leer Más →</span>
+          </div>
+        </div>
+        <div class="blog-card fade-up" style="transition-delay:.1s">
+          <div class="blog-img"><img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop" alt="Trekking Nepal" loading="lazy" /></div>
+          <div class="blog-body">
+            <div class="blog-date">📅 5 noviembre 2024</div>
+            <h3 class="blog-title">Trekking al Everest Base Camp en Nepal: Todo lo que Debes Saber</h3>
+            <p class="blog-excerpt">Desde la preparación física hasta el equipo necesario, te contamos todo sobre este icónico trekking que cambiará tu vida para siempre.</p>
+            <span class="blog-read" style="cursor:default;">Leer Más →</span>
+          </div>
+        </div>
+        <div class="blog-card fade-up" style="transition-delay:.2s">
+          <div class="blog-img"><img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&auto=format&fit=crop" alt="Filipinas" loading="lazy" /></div>
+          <div class="blog-body">
+            <div class="blog-date">📅 22 marzo 2024</div>
+            <h3 class="blog-title">Qué Hacer en Filipinas: Las Mejores Islas y Actividades</h3>
+            <p class="blog-excerpt">Descubre las playas de aguas cristalinas, arrecifes de coral y la cultura vibrante de las Filipinas en esta guía completa para viajeros.</p>
+            <span class="blog-read" style="cursor:default;">Leer Más →</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-center fade-up"><span class="btn btn-outline btn-lg" style="cursor:default;">Ver Todos los Artículos →</span></div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>¿Listo para tu Próxima Aventura?</h2>
+      <p>Habla con nuestros expertos y diseña el viaje de tus sueños. Sin compromiso.</p>
+      <a href="https://wa.seo-local.click/land/viajes-ferry" target="_blank" class="btn-whatsapp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Contáctanos por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <svg viewBox="0 0 36 36" fill="none" width="32" height="32"><circle cx="18" cy="18" r="17" stroke="#22894b" stroke-width="2"/><path d="M18 6 L21 15 L30 15 L23 21 L26 30 L18 24 L10 30 L13 21 L6 15 L15 15 Z" fill="#f47c20"/><circle cx="18" cy="18" r="3" fill="#22894b"/></svg>
+            Nomad Travel
+          </div>
+          <p class="footer-desc">Tu agencia de viajes de aventura. Experiencias únicas en los destinos más increíbles del mundo con guías expertos y precio garantizado.</p>
+          <div class="footer-contact-item">📞 <a href="tel:+34900123456" style="color:#ccc">+34 900 123 456</a></div>
+          <div class="footer-contact-item">✉️ <a href="mailto:hola@nomadtravel.es" style="color:#ccc">hola@nomadtravel.es</a></div>
+          <div class="footer-contact-item">📍 Calle Aventura 42, Madrid, España</div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Destinos</div>
+          <ul>
+            <li><span style="font-size:.88rem;color:#aaa;">Nepal</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Maldivas</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Sri Lanka</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">India</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Filipinas</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Francia</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Actividades</div>
+          <ul>
+            <li><span style="font-size:.88rem;color:#aaa;">City Tour</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Trekking</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Safari</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Senderismo</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Ciclismo</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Rafting</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Empresa</div>
+          <ul>
+            <li><span style="font-size:.88rem;color:#aaa;">Sobre Nosotros</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Nuestro Equipo</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Preguntas Frecuentes</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Blog de Viaje</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Política de Privacidad</span></li>
+            <li><span style="font-size:.88rem;color:#aaa;">Contacto</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Nomad Travel. Todos los derechos reservados.</span>
+        <span>Diseñado con ❤️ para los aventureros del mundo</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- POPUP MODAL -->
+  <div class="popup-overlay" id="popupOverlay" onclick="handleOverlayClick(event)">
+    <div class="popup-box" id="popupBox">
+      <div class="popup-hero" id="popupHero">
+        <img id="popupImg" src="" alt="" />
+        <div class="popup-hero-overlay"></div>
+        <div class="popup-hero-badges" id="popupBadges"></div>
+        <button class="popup-close" onclick="closePopup()">✕</button>
+        <div class="popup-hero-title" id="popupTitle"></div>
+      </div>
+      <div class="popup-body">
+        <div class="popup-tag-row" id="popupTags"></div>
+        <div class="popup-meta-row" id="popupMeta"></div>
+        <p class="popup-desc" id="popupDesc"></p>
+        <div class="popup-highlights" id="popupHighlights"></div>
+        <div class="popup-price-row" id="popupPriceRow"></div>
+        <div class="popup-cta">
+          <button class="popup-btn-wa" onclick="window.open('https://wa.seo-local.click/land/viajes-ferry','_blank')">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Consultar por WhatsApp
+          </button>
+          <button class="popup-btn-close" onclick="closePopup()">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <div class="float-wa">
+    <div class="float-wa-pulse"></div>
+    <a href="https://wa.me/34900123456" target="_blank" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // ===== NAVBAR SCROLL =====
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ===== HAMBURGER MENU =====
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // ===== FADE UP ON SCROLL =====
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    fadeEls.forEach(el => observer.observe(el));
+
+    // ===== COUNTER ANIMATION =====
+    const counters = document.querySelectorAll('.stat-num[data-target]');
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = +el.getAttribute('data-target');
+          const duration = 2000;
+          const step = target / (duration / 16);
+          let current = 0;
+          const update = () => {
+            current = Math.min(current + step, target);
+            el.textContent = target >= 1000 ? (current / 1000).toFixed(0) + 'K' : Math.floor(current);
+            if (current < target) requestAnimationFrame(update);
+            else {
+              if (target >= 1000) el.textContent = (target / 1000) + 'K';
+              else el.textContent = target;
+            }
+          };
+          requestAnimationFrame(update);
+          counterObs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.3 });
+    counters.forEach(c => counterObs.observe(c));
+
+    // ===== TESTIMONIALS SLIDER =====
+    const track = document.getElementById('testimonialsTrack');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+    const total = dots.length;
+
+    function goTo(index) {
+      current = (index + total) % total;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('nextBtn').addEventListener('click', () => goTo(current + 1));
+    dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.index)));
+
+    // Auto-slide
+    setInterval(() => goTo(current + 1), 5000);
+
+    // ===== POPUP DATA =====
+    const popupData = {
+      // TRIPS
+      trip1: {
+        type:'trip', img:'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&auto=format&fit=crop',
+        title:'Trek al Campo Base del Everest', tags:['🇳🇵 Nepal','Destacado'],
+        badges:['8% Off','Destacado'],
+        meta:[{icon:'📅',label:'14 días'},{icon:'👤',label:'1 persona'},{icon:'🥾',label:'Trekking'},{icon:'⛰️',label:'5.364 m'}],
+        desc:'Una de las aventuras más icónicas del mundo. Caminarás por senderos legendarios del Himalaya, pasarás por aldeas sherpa y disfrutarás de vistas incomparables al Everest, Lhotse y Ama Dablam. Experiencia que cambia vidas.',
+        highlights:['Guía experto certificado en montaña','Alojamiento en lodges incluido','Vuelo doméstico Katmandú-Lukla','Seguro de montaña incluido','Desayuno y cena diarios','Traslados aeropuerto'],
+        priceOld:'€2.800', priceNew:'€2.576', save:'Ahorras €224'
+      },
+      trip2: {
+        type:'trip', img:'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&auto=format&fit=crop',
+        title:'Descubre la Increíble India: Historia y Colores', tags:['🇮🇳 India'],
+        badges:['11% Off'],
+        meta:[{icon:'📅',label:'5 días'},{icon:'👤',label:'1 persona'},{icon:'🏛️',label:'Cultural'},{icon:'🌡️',label:'Templado'}],
+        desc:'Sumérgete en la India más auténtica: el Taj Mahal al amanecer, los ghats de Varanasi, el bullicio de Delhi y los palacios de Rajastán. Un viaje que estimula todos los sentidos con colores, sabores y tradiciones milenarias.',
+        highlights:['Visita al Taj Mahal incluida','Guía local en español','Hotel 4★ todas las noches','Traslados en tuk-tuk','Cenas con gastronomía local','Seguro de viaje incluido'],
+        priceOld:'€900', priceNew:'€800', save:'Ahorras €100'
+      },
+      trip3: {
+        type:'trip', img:'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=800&auto=format&fit=crop',
+        title:'Tour Cultural de Bután: El Reino del Himalaya', tags:['🇧🇹 Bután','Destacado'],
+        badges:['14% Off','Destacado'],
+        meta:[{icon:'📅',label:'7 días'},{icon:'👤',label:'1 persona'},{icon:'🏯',label:'Cultural'},{icon:'🌿',label:'Eco-turismo'}],
+        desc:'Bután, el último reino budista del Himalaya, te espera con su filosofía de Felicidad Nacional Bruta, monasterios colgantes como el Nido del Tigre, valles verdes intactos y una cultura ancestral que te dejará sin palabras.',
+        highlights:['Tarifa de sostenibilidad incluida','Guía privado certificado','Alojamiento boutique 4★','Vuelo internacional Bután incluido','Visita al Tiger\'s Nest Monastery','Ceremonias budistas tradicionales'],
+        priceOld:'€1.800', priceNew:'€1.548', save:'Ahorras €252'
+      },
+      trip4: {
+        type:'trip', img:'https://images.unsplash.com/photo-1540202404-a2f29016b523?w=800&auto=format&fit=crop',
+        title:'Paquete Romántico: Luna de Miel en Sri Lanka', tags:['🇱🇰 Sri Lanka','🏝️ Maldivas'],
+        badges:['13% Off'],
+        meta:[{icon:'📅',label:'9 días'},{icon:'👥',label:'2 personas'},{icon:'💑',label:'Romántico'},{icon:'🌴',label:'Playa & Cultura'}],
+        desc:'El paquete perfecto para parejas: selvas tropicales, templos budistas, trenes panorámicos entre plantaciones de té y playas de arena blanca en Maldivas. Una combinación irresistible para una luna de miel inolvidable.',
+        highlights:['Resort 5★ en Maldivas','Bungalow sobre el agua 2 noches','Cenas románticas a la luz de las velas','Excursión privada en kayak','Tren panorámico Kandy-Ella','Masajes de bienvenida incluidos'],
+        priceOld:'€700', priceNew:'€609', save:'Ahorras €91'
+      },
+      trip5: {
+        type:'trip', img:'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&auto=format&fit=crop',
+        title:'Fantástico Paquete Tour por las Maldivas', tags:['🏝️ Maldivas','Destacado'],
+        badges:['8% Off','Destacado'],
+        meta:[{icon:'📅',label:'11 días'},{icon:'👤',label:'1 persona'},{icon:'🤿',label:'Buceo & Snorkel'},{icon:'☀️',label:'Tropical'}],
+        desc:'Las Maldivas te reciben con aguas turquesas de cristal, arrecifes de coral repletos de vida marina y villas sobre el agua con vista al infinito. Un paraíso terrenal donde el tiempo se detiene y el lujo es el idioma del día.',
+        highlights:['Villa sobre el agua incluida','Desayuno y cena en el resort','Excursión de snorkel en arrecife','Paseo en dhoni al atardecer','Pesca nocturna tradicional','Spa con tratamientos de bienvenida'],
+        priceOld:'€800', priceNew:'€736', save:'Ahorras €64'
+      },
+      trip6: {
+        type:'trip', img:'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=800&auto=format&fit=crop',
+        title:'7 Días Explorando la Belleza de Filipinas', tags:['🇵🇭 Filipinas'],
+        badges:['8% Off'],
+        meta:[{icon:'📅',label:'7 días'},{icon:'👥',label:'2 personas'},{icon:'🏖️',label:'Playa & Aventura'},{icon:'🌊',label:'Archipiélago'}],
+        desc:'Filipinas es un archipiélago de 7.641 islas con playas de fama mundial, aguas de color esmeralda, terrazas de arroz milenarias y una hospitalidad cálida que te enamorará desde el primer momento. Un destino único en Asia.',
+        highlights:['Visita a El Nido y Palawan','Excursión en bangka entre islas','Snorkel en arrecife de Tubbataha','Noche en isla privada','Degustación de cocina filipina','Traslados internos incluidos'],
+        priceOld:'€1.200', priceNew:'€1.104', save:'Ahorras €96'
+      },
+      // DESTINOS
+      'dest-nepal': {
+        type:'dest', img:'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&auto=format&fit=crop',
+        title:'Nepal — El Techo del Mundo', tags:['Asia del Sur','5 viajes disponibles'],
+        meta:[{icon:'🌍',label:'Asia del Sur'},{icon:'🏔️',label:'Himalaya'},{icon:'🌡️',label:'Oct–Abr ideal'},{icon:'✈️',label:'~12h de vuelo'}],
+        desc:'Nepal es el hogar de ocho de las diez montañas más altas del mundo, incluyendo el Everest. Más allá de sus cumbres legendarias, encontrarás templos hindúes y budistas, una cultura sherpa única y valles de una belleza sobrenatural.',
+        highlights:['Trek al Everest Base Camp','Katmandú y sus templos Patrimonio UNESCO','Parque Nacional de Chitwan (rinocerontes y tigres)','Festival Dashain en octubre','Vuelos panorámicos al Himalaya','Gastronomía nepalesa: dal bhat y momo']
+      },
+      'dest-maldivas': {
+        type:'dest', img:'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&auto=format&fit=crop',
+        title:'Maldivas — Paraíso en el Océano Índico', tags:['Océano Índico','3 viajes disponibles'],
+        meta:[{icon:'🌍',label:'Océano Índico'},{icon:'🏝️',label:'1.200 islas'},{icon:'🌡️',label:'Todo el año'},{icon:'✈️',label:'~10h de vuelo'}],
+        desc:'Las Maldivas es el destino de lujo por excelencia: aguas turquesas de hasta 30 metros de visibilidad, arrecifes de coral con mantas y tortugas, y resorts exclusivos sobre el agua donde el horizonte es tu única frontera.',
+        highlights:['Villas sobre el agua privadas','Buceo con mantas rayas y tiburones ballena','Snorkel en arrecifes de coral vírgenes','Gastronomía gourmet con vista al mar','Excursiones en dhoni al atardecer','Spa de lujo con tratamientos ayurvédicos']
+      },
+      'dest-filipinas': {
+        type:'dest', img:'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=800&auto=format&fit=crop',
+        title:'Filipinas — 7.641 Islas de Aventura', tags:['Sudeste Asiático','1 viaje disponible'],
+        meta:[{icon:'🌍',label:'Sudeste Asiático'},{icon:'🏖️',label:'7.641 islas'},{icon:'🌡️',label:'Nov–May ideal'},{icon:'✈️',label:'~14h de vuelo'}],
+        desc:'Filipinas combina lo mejor de Asia: playas de arena blanca en Palawan (la mejor del mundo), arrecifes de coral, terrazas de arroz en Banaue, ciudades vibrantes y la cultura barangay más hospitalaria del continente.',
+        highlights:['El Nido y sus lagunas secretas','Palawan — mejor isla del mundo','Terrazas de arroz de Banaue (UNESCO)','Volcán Mayon y Taal activos','Buceo en Tubbataha Reef','Fiesta de San Isidro en mayo']
+      },
+      'dest-india': {
+        type:'dest', img:'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&auto=format&fit=crop',
+        title:'India — El Subcontinente de los Sentidos', tags:['Asia del Sur','3 viajes disponibles'],
+        meta:[{icon:'🌍',label:'Asia del Sur'},{icon:'🏛️',label:'Patrimonio UNESCO'},{icon:'🌡️',label:'Oct–Mar ideal'},{icon:'✈️',label:'~9h de vuelo'}],
+        desc:'India es una experiencia que transforma: el Taj Mahal al amanecer, los ghats sagrados de Varanasi, los palacios de Rajastán, los remates del sabor en Kerala y los ashrams de Rishikesh. Un país donde cada rincón cuenta una historia milenaria.',
+        highlights:['Taj Mahal — Maravilla del Mundo','Triángulo Dorado: Delhi, Agra, Jaipur','Ghats de Varanasi al amanecer','Backwaters de Kerala en houseboat','Palacio de Amber en elefante','Gastronomía: curry, biryani y chai']
+      },
+      'dest-srilanka': {
+        type:'dest', img:'https://images.unsplash.com/photo-1540202404-a2f29016b523?w=800&auto=format&fit=crop',
+        title:'Sri Lanka — La Perla del Océano Índico', tags:['Océano Índico','4 viajes disponibles'],
+        meta:[{icon:'🌍',label:'Océano Índico'},{icon:'🌿',label:'Selvas y playas'},{icon:'🌡️',label:'Dic–Mar ideal'},{icon:'✈️',label:'~10h de vuelo'}],
+        desc:'Sri Lanka seduce con su diversidad en un territorio compacto: templos budistas de roca, trenes pintorescos entre plantaciones de té, elefantes en libertad en Minneriya, playas doradas al sur y arrecifes de coral en el este.',
+        highlights:['Roca de Sigiriya — UNESCO','Tren panorámico Kandy-Ella','Safari en Yala (leopardos y elefantes)','Templo del Diente de Buda en Kandy','Playas de Mirissa y surf en Arugam Bay','Plantaciones de té de Nuwara Eliya']
+      },
+      'dest-butan': {
+        type:'dest', img:'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=800&auto=format&fit=crop',
+        title:'Bután — El Reino de la Felicidad', tags:['Asia del Sur','2 viajes disponibles'],
+        meta:[{icon:'🌍',label:'Asia del Sur'},{icon:'🏯',label:'Reino budista'},{icon:'🌡️',label:'Mar–May / Sep–Nov'},{icon:'✈️',label:'~11h de vuelo'}],
+        desc:'Bután mide su progreso en Felicidad Nacional Bruta. Un reino que protege celosamente su cultura y naturaleza: monasterios dzong inaccesibles, festivales de máscaras, bosques vírgenes y el Paro Taktsang (Nido del Tigre) como joya máxima.',
+        highlights:['Nido del Tigre — monasterio sagrado','Festival Tshechu con danzas de máscaras','Valle de Punakha y su dzong','Avistamiento de grullas de cuello negro','Tarifa de sostenibilidad única','Gastronomía: ema datshi (queso y chile)']
+      },
+      'dest-peru': {
+        type:'dest', img:'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800&auto=format&fit=crop',
+        title:'Perú — Cuna de las Civilizaciones Andinas', tags:['Sudamérica','2 viajes disponibles'],
+        meta:[{icon:'🌍',label:'Sudamérica'},{icon:'🏛️',label:'Machu Picchu'},{icon:'🌡️',label:'May–Sep ideal'},{icon:'✈️',label:'~13h de vuelo'}],
+        desc:'Perú es el corazón de las civilizaciones andinas: Machu Picchu entre las nubes, el Lago Titicaca flotante, las misteriosas Líneas de Nazca, la selva amazónica y Lima como capital gastronómica de América Latina.',
+        highlights:['Machu Picchu — Maravilla del Mundo','Camino Inca de 4 días','Lago Titicaca e islas Uros','Vuelo sobre Líneas de Nazca','Cusco — ciudad inca y colonial','Lima: gastronomía top mundial']
+      },
+      'dest-francia': {
+        type:'dest', img:'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&auto=format&fit=crop',
+        title:'Francia — Arte, Cultura y Gastronomía', tags:['Europa','2 viajes disponibles'],
+        meta:[{icon:'🌍',label:'Europa Occidental'},{icon:'🗼',label:'París'},{icon:'🌡️',label:'Abr–Oct ideal'},{icon:'✈️',label:'~2h de vuelo'}],
+        desc:'Francia es el destino más visitado del mundo con razón: la Torre Eiffel y el Louvre en París, los viñedos de Borgoña, la Riviera Francesa, los castillos del Loira y la gastronomía declarada Patrimonio de la Humanidad por la UNESCO.',
+        highlights:['Torre Eiffel y Museo del Louvre','Crucero por el río Sena','Viñedos de Borgoña y Champagne','Costa Azul: Niza, Mónaco y Cannes','Castillos del Valle del Loira','Mont Saint-Michel — maravilla medieval']
+      },
+      // ACTIVIDADES
+      'act-senderismo': {
+        type:'act', img:'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&auto=format&fit=crop',
+        title:'Senderismo', tags:['6 viajes disponibles','Nivel: Variado'],
+        meta:[{icon:'🥾',label:'Senderismo'},{icon:'📊',label:'Todos los niveles'},{icon:'🌍',label:'6 destinos'},{icon:'📅',label:'Todo el año'}],
+        desc:'El senderismo es la manera más auténtica de conocer un destino. Desde caminos suaves entre bosques y valles hasta rutas de alta montaña que desafían tus límites. Cada paso te acerca a paisajes que pocas personas llegan a ver.',
+        highlights:['Rutas guiadas por expertos locales','Equipo de seguridad incluido','Grupos reducidos (máx. 12 personas)','Mapas y GPS proporcionados','Botiquín de primeros auxilios','Adaptado a tu nivel físico']
+      },
+      'act-citytour': {
+        type:'act', img:'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&auto=format&fit=crop',
+        title:'City Tour', tags:['9 viajes disponibles','Nivel: Fácil'],
+        meta:[{icon:'🏙️',label:'City Tour'},{icon:'📊',label:'Nivel: Fácil'},{icon:'🌍',label:'9 destinos'},{icon:'👥',label:'Grupos pequeños'}],
+        desc:'Descubre las ciudades más fascinantes del mundo con guías locales apasionados que te cuentan los secretos que no aparecen en las guías. Arquitectura, historia, gastronomía y cultura a pie o en transporte privado.',
+        highlights:['Guías locales certificados en español','Incluye transporte privado','Visitas a monumentos incluidas','Degustación gastronómica','Horarios flexibles a tu medida','Grupos máximo 10 personas']
+      },
+      'act-ciclismo': {
+        type:'act', img:'https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800&auto=format&fit=crop',
+        title:'Ciclismo de Aventura', tags:['6 viajes disponibles','Nivel: Medio'],
+        meta:[{icon:'🚴',label:'Ciclismo'},{icon:'📊',label:'Nivel: Medio'},{icon:'🌍',label:'6 destinos'},{icon:'⏱️',label:'4-8 horas/día'}],
+        desc:'Pedalea por rutas que te llevan por paisajes de ensueño: senderos entre arrozales en Asia, carreteras con vistas al Himalaya, caminos rurales en Europa o descensos épicos desde volcanes. La libertad sobre dos ruedas tiene otro sabor.',
+        highlights:['Bicicletas de montaña de calidad','Casco y equipo de seguridad','Asistencia mecánica en ruta','Guía ciclista experto','Transferencia de equipaje','Ruta adaptable al grupo']
+      },
+      'act-trekking': {
+        type:'act', img:'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop',
+        title:'Trekking de Alta Montaña', tags:['8 viajes disponibles','Nivel: Exigente'],
+        meta:[{icon:'⛰️',label:'Alta Montaña'},{icon:'📊',label:'Nivel: Exigente'},{icon:'🌍',label:'8 destinos'},{icon:'📅',label:'Temporadas específicas'}],
+        desc:'El trekking de alta montaña es para quienes buscan ir más allá. Rutas multiday en el Himalaya, los Andes o los Alpes donde cada jornada te lleva a campamentos y refugios de montaña con vistas que compensan cada esfuerzo.',
+        highlights:['Guía de montaña certificado UIAGM','Aclimatación progresiva planificada','Alojamiento en lodges y campamentos','Permisos de trekking incluidos','Equipo de montaña técnico','Evacuación de emergencia cubierta']
+      },
+      'act-safari': {
+        type:'act', img:'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&auto=format&fit=crop',
+        title:'Safari de Naturaleza', tags:['8 viajes disponibles','Nivel: Fácil'],
+        meta:[{icon:'🦁',label:'Safari'},{icon:'📊',label:'Nivel: Fácil'},{icon:'🌍',label:'8 destinos'},{icon:'📷',label:'Fotografía wildlife'}],
+        desc:'Observa los cinco grandes —león, elefante, búfalo, leopardo y rinoceronte— en su hábitat natural. Safaris en jeep al amanecer, paseos en elefante en Asia y noches en lodges de lujo rodeado de la naturaleza más salvaje del planeta.',
+        highlights:['Jeep 4x4 privado con conductor','Guía naturalista experto en fauna','Amanecer y atardecer en el parque','Alojamiento en lodge de lujo','Binoculares y equipo fotográfico','Certificado eco-turismo responsable']
+      },
+      'act-escalada': {
+        type:'act', img:'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&auto=format&fit=crop',
+        title:'Escalada y Alpinismo', tags:['6 viajes disponibles','Nivel: Avanzado'],
+        meta:[{icon:'🧗',label:'Escalada'},{icon:'📊',label:'Nivel: Avanzado'},{icon:'🌍',label:'6 destinos'},{icon:'🪢',label:'Cuerdas y seguridad'}],
+        desc:'Para los más atrevidos: escalada en roca, vías ferratas y alpinismo en destinos legendarios como los Dolomitas, el Himalaya o los Andes. Expertos guías de montaña certificados te llevan a cumbre de manera segura y memorable.',
+        highlights:['Material técnico de escalada incluido','Guía alpinista certificado UIAGM','Seguro de montaña y rescate','Clases técnicas previas incluidas','Grupos máximo 6 personas','Acceso a vías exclusivas']
+      }
+    };
+
+    function openPopup(id) {
+      const d = popupData[id];
+      if (!d) return;
+      document.getElementById('popupImg').src = d.img;
+      document.getElementById('popupImg').alt = d.title;
+      document.getElementById('popupTitle').textContent = d.title;
+
+      // Badges
+      const badgesEl = document.getElementById('popupBadges');
+      badgesEl.innerHTML = '';
+      if (d.badges) d.badges.forEach(b => {
+        const s = document.createElement('span');
+        s.className = b === 'Destacado' ? 'badge badge-green' : 'badge badge-orange';
+        s.textContent = b;
+        badgesEl.appendChild(s);
+      });
+
+      // Tags
+      document.getElementById('popupTags').innerHTML = d.tags.map(t => `<span class="popup-tag">${t}</span>`).join('');
+
+      // Meta
+      document.getElementById('popupMeta').innerHTML = d.meta.map(m => `<div class="popup-meta-item"><span>${m.icon}</span>${m.label}</div>`).join('');
+
+      // Desc
+      document.getElementById('popupDesc').textContent = d.desc;
+
+      // Highlights
+      document.getElementById('popupHighlights').innerHTML = d.highlights.map(h => `<div class="popup-highlight">${h}</div>`).join('');
+
+      // Price
+      const priceRow = document.getElementById('popupPriceRow');
+      if (d.priceNew) {
+        priceRow.innerHTML = `<span class="popup-price-old">${d.priceOld}</span><span class="popup-price-new">${d.priceNew}</span><span class="popup-price-save">${d.save}</span>`;
+        priceRow.style.display = 'flex';
+      } else {
+        priceRow.style.display = 'none';
+      }
+
+      document.getElementById('popupOverlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePopup() {
+      document.getElementById('popupOverlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function handleOverlayClick(e) {
+      if (e.target === document.getElementById('popupOverlay')) closePopup();
+    }
+
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
+
+    // ===== SMOOTH SCROLL for anchor links =====
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 70;
+          window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
